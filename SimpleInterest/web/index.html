@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <h1> Simple Interest</h1>
+    <form action="CalculateInterest" method="post">
+                Principle Amount:<input type="text" name="X" style="width:40px"> 
+                Rate:<input type="text" name="Y" style="width:40px">
+                Time in years:<input type="text" name="Z" style="width:40px">
+                <input type="hidden" name="type"value="Simple">
+                <input type="submit" name="submit" value="calculate">    
+            </form> 
+    
+    <h1> Compund Interest</h1>
+    <form action="CalculateInterest" method="post">
+                Principle Amount:<input type="text" name="X" style="width:40px"> 
+                Rate:<input type="text" name="Y" style="width:40px">
+                Time in years:<input type="text" name="Z" style="width:40px">
+                No.of times to pay:<input type="text" name="N" style="width:40px">
+                <input type="hidden" name="type" value="Compund">
+                <input type="submit" name="submit" value="calculate">    
+            </form>
+</html>
